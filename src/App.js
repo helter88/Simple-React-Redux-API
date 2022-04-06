@@ -8,7 +8,6 @@ function App() {
   const dispatch = useDispatch();
 
   useEffect(() => dispatch(getData()), [dispatch]);
-  console.log(list);
   let showList = [];
   showList = list.map((item) => (
     <li key={item.id}>
